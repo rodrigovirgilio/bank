@@ -30,8 +30,6 @@ end
 
 group :test do
   gem 'capybara', '>= 2.15'
-  gem 'chromedriver-helper'
   gem 'rails-controller-testing', '~> 1.0.4'
-  gem 'selenium-webdriver'
   gem 'shoulda-matchers', '~> 4.0.1'
 end
