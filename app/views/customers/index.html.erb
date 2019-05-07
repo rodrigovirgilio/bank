@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Customers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><%= customer.name %></td>
+        <td><%= link_to 'Show', customer %></td>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <th>Balance</th>
+      </tr>
+      <% customer.accounts.each do |account| %>
+        <tr>
+          <td><%= account.name %></td>
+          <td>
+            <%= number_to_currency(account.balance, unit: 'R$', separator: ',') %>
+          </td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customer', new_customer_path %>
