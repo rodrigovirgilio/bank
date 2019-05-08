@@ -6,9 +6,9 @@ RSpec.describe Account, type: :model do
   end
 
   context 'Validation' do
-    it { should validate_presence_of :name }
-    it { should validate_uniqueness_of :name }
+    it { is_expected.to validate_presence_of :name }
+    it { is_expected.to validate_uniqueness_of :name }
 
-    it { should validate_presence_of :balance }
+    it { is_expected.to validate_presence_of :balance }
   end
 end

@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Customers</h1>
+<h1><%= Customer.model_name.human %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th><%= Customer.human_attribute_name(:name) %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -13,11 +13,11 @@
     <% @customers.each do |customer| %>
       <tr>
         <td><%= customer.name %></td>
-        <td><%= link_to 'Show', customer %></td>
+        <td><%= link_to t('.show'), customer %></td>
       </tr>
       <tr>
-        <th>Name</th>
-        <th>Balance</th>
+        <th><%= Account.human_attribute_name(:name) %></th>
+        <th><%= Account.human_attribute_name(:balance) %></th>
       </tr>
       <% customer.accounts.each do |account| %>
         <tr>
@@ -33,4 +33,4 @@
 
 <br>
 
-<%= link_to 'New Customer', new_customer_path %>
+<%= link_to t('.new_customer'), new_customer_path %>

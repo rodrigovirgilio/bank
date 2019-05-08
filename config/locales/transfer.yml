@@ -1,0 +1,17 @@
+pt-BR:
+  activemodel:
+    models:
+      transfer:
+        one: Transferência
+        other: Transferências
+    attributes:
+      transfer:
+        account: Conta
+        source_account_id: Conta Origem
+        destination_account_id: Conta Destino
+        amount: Valor Transferido
+        type_transaction: Tipo de Transferência
+    transfers:
+      index:
+        show: Mostrar
+        new_transfer: Nova Transferência
