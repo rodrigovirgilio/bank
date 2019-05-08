@@ -15,7 +15,7 @@ class AccountTransactionsController < ApplicationController
 
     respond_to do |format|
       if @transfer.valid?
-        @result = TransactionHistory.call(@transfer)
+        @result = TransactionHistoryService.call(@transfer)
         format.html { redirect_to account_transactions_path, notice: t('.successfully') }
       else
         format.html { render :new }

@@ -1,6 +1,4 @@
-class TransactionHistory
-  attr_reader :transfer
-
+class TransactionHistoryService
   def initialize(transfer = {})
     @transfer = transfer
   end
@@ -13,11 +11,11 @@ class TransactionHistory
     ActiveRecord::Base.transaction do
       create_account_transaction_debit
       create_account_transaction_credit
-      debit_source_account
-      credit_destination_account
     rescue ActiveRecord::RecordNotFound
       false
     end
+
+    TransferFundsService.call(source_account, destination_account, amount)
   end
 
   private
@@ -50,13 +48,5 @@ class TransactionHistory
     )
   end
 
-  def debit_source_account
-    balance = source_account.balance - amount
-    source_account.update(balance: balance)
-  end
-
-  def credit_destination_account
-    balance = destination_account.balance + amount
-    destination_account.update(balance: balance)
-  end
+  attr_reader :transfer
 end
