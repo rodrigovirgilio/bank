@@ -1,16 +1,18 @@
 <%= form_for @customer do |f| %>
+  <%= render 'shared/messages', object: @customer %>
+
   <div class="field">
-    <%= label_tag(:name, 'Name:') %>
+    <%= label_tag :name %>
     <%= f.text_field :name %>
   </div>
 
   <div class="field">
     <%= label_tag(:name, 'Create Accounts:') %><br>
     <%= f.fields_for :accounts do |p| %>
-      <%= label_tag(:name, 'Name:') %>
+      <%= label_tag :name %>
       <%= p.text_field :name %>
 
-      <%= label_tag(:name, 'Balance:') %>
+      <%= label_tag :balance %>
       <%= p.text_field :balance %>
     <% end %>
   </div>

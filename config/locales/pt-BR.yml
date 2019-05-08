@@ -1,0 +1,270 @@
+pt-BR:
+  date:
+    abbr_day_names:
+    - Dom
+    - Seg
+    - Ter
+    - Qua
+    - Qui
+    - Sex
+    - Sáb
+    abbr_month_names:
+    -
+    - Jan
+    - Fev
+    - Mar
+    - Abr
+    - Mai
+    - Jun
+    - Jul
+    - Ago
+    - Set
+    - Out
+    - Nov
+    - Dez
+    day_names_downcase:
+    - domingo
+    - segunda
+    - terca
+    - quarta
+    - quinta
+    - sexta
+    - sabado
+    day_names:
+    - Domingo
+    - Segunda
+    - Terça
+    - Quarta
+    - Quinta
+    - Sexta
+    - Sábado
+    formats:
+      default: ! '%d/%m/%Y'
+      long: ! '%d de %B de %Y'
+      short: ! '%d de %B'
+      competencia: "%Y%m"
+      data_importacao: "%d%m%Y 01:%M:%S"
+      data_importacao_sem_hora: "%d%m%Y"
+    month_names:
+    -
+    - Janeiro
+    - Fevereiro
+    - Março
+    - Abril
+    - Maio
+    - Junho
+    - Julho
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Dezembro
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: aproximadamente 1 hora atrás
+        other: aproximadamente %{count} horas atrás
+      about_x_months:
+        one: aproximadamente 1 mês atrás
+        other: aproximadamente %{count} meses atrás
+      about_x_years:
+        one: aproximadamente 1 ano atrás
+        other: aproximadamente %{count} anos atrás
+      almost_x_years:
+        one: quase 1 ano atrás
+        other: quase %{count} anos atrás
+      half_a_minute: meio minuto atrás
+      less_than_x_minutes:
+        one: menos de um minuto atrás
+        other: menos de %{count} minutos atrás
+      less_than_x_seconds:
+        one: menos de 1 segundo atrás
+        other: menos de %{count} segundos atrás
+      over_x_years:
+        one: mais de 1 ano atrás
+        other: mais de %{count} anos atrás
+      x_days:
+        one: 1 dia atrás
+        other: ! '%{count} dias atrás'
+      x_minutes:
+        one: 1 minuto atrás
+        other: ! '%{count} minutos atrás'
+      x_months:
+        one: 1 mês atrás
+        other: ! '%{count} meses atrás'
+      x_seconds:
+        one: 1 segundo atrás
+        other: ! '%{count} segundos atrás'
+    prompts:
+      day: Dia
+      hour: Hora
+      minute: Minuto
+      month: Mês
+      second: Segundo
+      year: Ano
+  activemodel:
+    errors:
+      messages:
+        blank: 'não pode ficar em branco'
+  activemodel:
+    errors:
+      messages:
+        invalid: não é válido
+        blank: não pode ficar em branco
+  activerecord:
+    models:
+      customer:
+        one: Cliente
+        other: Clientes
+      account:
+        one: Conta
+        other: Contas
+    attributes:
+      customer:
+        name: Nome
+      account:
+        name: Nome
+        balance: Valor da Conta
+    errors:
+      format: ! '%{attribute} %{message}'
+      messages:
+        accepted: deve ser aceito
+        blank: não pode ficar em branco
+        required: não pode ficar em branco
+        present: deve ficar em branco
+        confirmation: não é igual a %{attribute}
+        empty: não pode ficar vazio
+        equal_to: deve ser igual a %{count}
+        even: deve ser par
+        exclusion: não está disponível
+        greater_than: deve ser maior que %{count}
+        greater_than_or_equal_to: deve ser maior ou igual a %{count}
+        inclusion: não é válido
+        invalid: não é válido
+        less_than: deve ser menor que %{count}
+        less_than_or_equal_to: deve ser menor ou igual a %{count}
+        not_a_number: não é um número
+        not_an_integer: não é um número inteiro
+        odd: deve ser ímpar
+        record_invalid: ! 'A validação falhou: %{errors}'
+        restrict_dependent_destroy:
+          one: "Não é possível excluir o registro pois existe um %{record} dependente"
+          many: "Não é possível excluir o registro pois existem %{record} dependentes"
+        taken: já está em uso
+        too_long: ! 'é muito longo (máximo: %{count} caracteres)'
+        too_short: ! 'é muito curto (mínimo: %{count} caracteres)'
+        wrong_length: não possui o tamanho esperado (%{count} caracteres)
+        other_than: "deve ser diferente de %{count}"
+      template:
+        body: ! 'Por favor, verifique o(s) seguinte(s) campo(s):'
+        header:
+          one: ! 'Não foi possível gravar %{model}: 1 erro'
+          other: ! 'Não foi possível gravar %{model}: %{count} erros.'
+  helpers:
+    actions: "Ações"
+    links:
+      back: "Voltar"
+      cancel: "Cancelar"
+      confirm: "Você tem certeza?"
+      destroy: "Excluir"
+      new: "Novo"
+      newa: "Nova"
+      edit: "Editar"
+      add: "Adicionar"
+    titles:
+      show: "Ver %{model}"
+      edit: "Editar %{model}"
+      save: "Salvar %{model}"
+      new: "Novo %{model}"
+      newa: "Nova %{model}"
+      delete: "Excluir %{model}"
+    crud:
+      create: '%{model} criado com sucesso!'
+      update: '%{model} atualizado com sucesso!'
+      destroy: '%{model} excluído com sucesso!'
+      not_destroyed: 'Não foi possível excluir o registro!'
+      createa: '%{model} criada com sucesso!'
+      updatea: '%{model} atualizada com sucesso!'
+      destroya: '%{model} excluída com sucesso!'
+      not_found: '%{model} não encontrado'
+    select:
+      prompt: Por favor selecione
+    submit:
+      create: Criar %{model}
+      submit: Salvar %{model}
+      update: Atualizar %{model}
+  number:
+    currency:
+      format:
+        delimiter: .
+        format: ! '%u %n'
+        precision: 2
+        separator: ! ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: R$
+    format:
+      delimiter: .
+      precision: 3
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion:
+            one: bilhão
+            other: bilhões
+          million:
+            one: milhão
+            other: milhões
+          quadrillion:
+            one: quatrilhão
+            other: quatrilhões
+          thousand: mil
+          trillion:
+            one: trilhão
+            other: trilhões
+          unit: ''
+      format:
+        delimiter: .
+        precision: 2
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: .
+        format: "%n%"
+    precision:
+      format:
+        delimiter: .
+  support:
+    array:
+      last_word_connector: ! ' e '
+      two_words_connector: ! ' e '
+      words_connector: ! ', '
+  time:
+    am: ''
+    formats:
+      default: ! '%a, %d de %B de %Y, %H:%M:%S %z'
+      long: ! '%d de %B de %Y, %H:%M'
+      short: ! '%d de %B, %H:%M'
+      short_date: ! '%d/%m/%Y'
+      short_datetime: ! '%d/%m/%Y às %H:%M'
+      only_date: ! '%Y-%m-%d'
+    pm: ''
