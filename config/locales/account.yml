@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      account:
+        one: Conta
+        other: Contas
+    attributes:
+      account:
+        name: Nome da Conta
+        balance: Valor da Conta
+      accounts:
+        name: Nome da Conta
+        balance: Valor da Conta

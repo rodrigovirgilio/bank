@@ -1,0 +1,20 @@
+pt-BR:
+  activerecord:
+    models:
+      customer:
+        one: Cliente e Conta
+        other: Clientes e Contas
+    attributes:
+      customer:
+        name: Nome da Conta
+  customers:
+    form:
+      accounts: 'Cadastrar Contas:'
+    index:
+      show: Mostrar
+      new_customer: Novo Cliente
+    show:
+      back: Voltar
+    create:
+      successfully: Cliente e Conta criada com sucesso.
+      successfully_update: Cliente e Conta atualizada com sucesso.

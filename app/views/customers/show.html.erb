@@ -1,8 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>
+    <%= Customer.human_attribute_name(:name) %>
+  </strong>
   <%= @customer.name %>
 </p>
 
-<%= link_to 'Back', customers_path %>
+<strong>
+  <%= Account.human_attribute_name(:name) %>
+  <%= Account.human_attribute_name(:balance) %>
+</strong>
+
+<% @customer.accounts.each do |account| %>
+  <p>
+    <%= account.name %>
+    <%= number_to_currency(account.balance, unit: 'R$', separator: ',') %>
+  </p>
+<% end %>
+
+<%= link_to t('.back'), customers_path %>
