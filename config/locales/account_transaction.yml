@@ -1,0 +1,23 @@
+pt-BR:
+  activerecord:
+    models:
+      account_transaction:
+        one: Transferência
+        other: Transferências
+    attributes:
+      account_transaction:
+        account_id: Nome da Conta
+        amount: Valor da Transferência
+        type_transaction: Tipo da Transferência
+  account_transactions:
+    form:
+      accounts: 'Cadastrar Contas:'
+    index:
+      show: Mostrar
+      new_transfer: Nova Transferência
+    new:
+      back: Voltar
+    show:
+      back: Voltar
+    create:
+      successfully: Transferência realizada com sucesso.

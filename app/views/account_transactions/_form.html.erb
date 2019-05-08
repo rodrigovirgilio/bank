@@ -1,0 +1,23 @@
+<%= form_for transfer, url: account_transactions_path do |f| %>
+
+  <%= render 'shared/messages', object: transfer %>
+
+  <div class="field">
+    <%= f.label :source_account_id %>
+    <%= f.select :source_account_id, Account.pluck(:name, :id).sort %>
+  </div>
+
+  <div class="field">
+    <%= f.label :destination_account_id %>
+    <%= f.select :destination_account_id, Account.pluck(:name, :id).sort %>
+  </div>
+
+  <div class="field">
+   <%= f.label :amount %>
+   <%= f.number_field :amount, class: :text_field, step: :any %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

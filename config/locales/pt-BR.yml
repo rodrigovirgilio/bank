@@ -109,26 +109,9 @@ pt-BR:
   activemodel:
     errors:
       messages:
-        blank: 'não pode ficar em branco'
-  activemodel:
-    errors:
-      messages:
         invalid: não é válido
         blank: não pode ficar em branco
   activerecord:
-    models:
-      customer:
-        one: Cliente
-        other: Clientes
-      account:
-        one: Conta
-        other: Contas
-    attributes:
-      customer:
-        name: Nome
-      account:
-        name: Nome
-        balance: Valor da Conta
     errors:
       format: ! '%{attribute} %{message}'
       messages:

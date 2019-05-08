@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= Transfer.model_name.human %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= Transfer.human_attribute_name(:account) %></th>
+      <th><%= Transfer.human_attribute_name(:amount) %></th>
+      <th><%= Transfer.human_attribute_name(:type_transaction) %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @account_transactions.each do |account_transaction| %>
+      <tr>
+        <td><%= account_transaction.account.name %></td>
+        <td><%= number_to_currency(account_transaction.amount, unit: 'R$', separator: ',') %></td>
+        <td><%= account_transaction.type_transaction %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('.new_transfer'), new_account_transaction_path %>

@@ -1,0 +1,6 @@
+<h1><%=t '.title', :default => [:'helpers.titles.newa', 'New %{model}'],
+  :model => AccountTransaction.model_name.human %></h1>
+
+<%= render 'form', transfer: @transfer %>
+
+<%= link_to t('.back'), account_transactions_path %>
