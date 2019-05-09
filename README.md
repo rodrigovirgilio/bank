@@ -1,24 +1,43 @@
-# README
+# Bank
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project setup
+### Previous Requirements
+* Linux / Mac OSX
+* [Ruby 2.6.3](https://www.ruby-lang.org)
+* [Rails 5.2.3](http://railsinstaller.org)
+* [PostgreSQL 9.5](https://www.postgresql.org)
+* [Bundler gem](https://github.com/bundler/bundler)
 
-Things you may want to cover:
+### 1. Install gems
 
-* Ruby version
+    bundle install
 
-* System dependencies
 
-* Configuration
+### 2. Create database
 
-* Database creation
+    rails db:create
 
-* Database initialization
+### 3. Migrate database
 
-* How to run the test suite
+    rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+### Running the server
 
-* Deployment instructions
+    rails s
 
-* ...
+### Running the test switch
+
+    rspec
+
+# Contribute to open source projects
+This is an open source project [learn how to contribute])https://opensource.guide/how-to-contribute/)
+
+# How to use
+
+### Functionality #1 - Transfer Money
+## a. Create client and accounts by the route: `/customers/new`
+
+## b. Transfer money by the route: `/account_transactions/new`
+
+### Funcionality #2 - Check Balance
+## a. Check balance by the route: `/customers`
