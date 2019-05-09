@@ -30,14 +30,14 @@
     rspec
 
 # Contribute to open source projects
-This is an open source project [learn how to contribute])https://opensource.guide/how-to-contribute/)
+This is an open source project [learn how to contribute](https://opensource.guide/how-to-contribute/)
 
 # How to use
 
-### Functionality #1 - Transfer Money
-## a. Create client and accounts by the route: `/customers/new`
+## Functionality #1 - Transfer Money
+#### a. Create client and accounts by the route: `/customers/new`
 
-## b. Transfer money by the route: `/account_transactions/new`
+#### b. Transfer money by the route: `/account_transactions/new`
 
-### Funcionality #2 - Check Balance
-## a. Check balance by the route: `/customers`
+## Funcionality #2 - Check Balance
+#### a. Check balance by the route: `/customers`
