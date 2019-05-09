@@ -30,7 +30,7 @@
     rspec
 
 # Contribute to open source projects
-This is an open source project [learn how to contribute](https://opensource.guide/how-to-contribute/)
+This is an open source project [learn how to contribute](https://github.com/rodrigovirgilio/bank/blob/master/CONTRIBUTING.md)
 
 # How to use
 
